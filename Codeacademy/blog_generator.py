@@ -1,7 +1,6 @@
 import openai
 
-openai.api_key = '' # Fill in your own key
-
+openai.api_key = ''
 def generate_blog(paragraph_topic):
   response = openai.completions.create(
     model = 'gpt-3.5-turbo-instruct',
